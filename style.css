@@ -36,6 +36,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+    
 }
 
 .search {
@@ -89,6 +90,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
 .card img {
@@ -96,8 +98,14 @@ body {
     height: 90%;
     border-radius: 25px;
     object-fit: cover;
+   
 }
 
+.card:hover{
+    transform: scale(1.05);      
+    background-color: #dde7ff;  
+    
+}
 /* === TEXTOS DOS ESPORTES === */
 .textos-esportes {
     display: flex;
@@ -139,4 +147,11 @@ button {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+ 
+button:hover{
+    transform: scale(1.05);      
+    background-color: #2c6bff;  
+    
 }
