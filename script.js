@@ -10,15 +10,17 @@ form.addEventListener('submit', function(event) {
     let duvidas = document.getElementById('mensagem').value.trim();
 
  // verificar se estão vazios
-    if (nome === "" || email === "" || mensagem === "") {
+    if (nome === "" || email === "" || mensagem === "" || Number.isNaN(telefone)) {
         event.preventDefault(); // impede envio
         alert("Preencha todos os campos antes de enviar.");
         return; 
+    }else{
+        show.style.display = "block"; // mostra a mensagem
     }
 
     console.log(nome, email, telefone, duvidas); // TESTE PARA VER SE NÃO HÁ INSETO, E SE TIVER CONHECERÃO A DORRR!!
 
-    show.style.display = "block"; // mostra a mensagem
+    
 
     // simulação de envio como se tivesse back-end
     setTimeout(() => {
