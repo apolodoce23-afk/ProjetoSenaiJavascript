@@ -127,7 +127,7 @@ body {
 }
 
 #falarConosco{
-    margin-left: 36%;
+    text-align: center;
 }
 
 form {
@@ -136,6 +136,7 @@ form {
     flex-direction: column;
     gap: 10px;
     margin-left: 36%;
+    margin: auto;
 }
 
 input, textarea {
